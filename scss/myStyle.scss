@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: Open Sans;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background-image: url("img/bg-hero-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 100px
+}  
+   
+$myGray: rgb(146, 146, 146);
+$myPink: hsl(322, 100%, 66%);
+$paleCyan: hsl(193, 100%, 96%);
+
+.tryitbtn {
+    background: white;
+    padding: 8px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px $myGray;
+    border: none;
+    color: rgb(22, 22, 22);
+    font-family: Open Sans;
+    font-weight: 700;
+}
+
+.tryitbtn:hover {
+    color: $myGray;
+}
+
+.col-md-5 h1 {
+    font-family: Poppins;
+    line-height: 1.5;
+    padding-bottom: 20px;
+
+}
+
+.col-md-5 p {
+    font-family: Open sans;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+@mixin startedBtn {
+    color: $paleCyan;
+    padding: 8px 50px;
+    background: $myPink;
+    border-radius: 20px;
+    border: none;
+    
+}
+
+.startedbtn {
+    @include startedBtn();
+}
+
+.startedbtn:hover {
+    background:hsl(322, 94%, 79%);
+}
+
+@mixin important-tabs {
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(228, 228, 228);
+    padding: 30px;
+    margin-bottom: 30px
+}
+
+.grow-together {
+    @include important-tabs();
+    
+}
+
+.left-grow {
+    padding-top: 100px;
+      h3 {
+          font-weight: 700;
+          padding-bottom: 30px;
+      }
+      p {
+          color: $myGray;
+      }
+}
+
+ .conversations {
+        @include important-tabs();
+ }
+    
+.right-conv {
+    padding-top: 100px;
+
+    h3 {
+        font-weight: 700;
+          padding-bottom: 30px;
+    }
+    p {
+        color: $myGray;
+    }
+}
+
+.your-users {
+    @include important-tabs();
+}
+
+.left-user {
+    padding-top: 100px;
+
+    h3 {
+        font-weight: 700;
+          padding-bottom: 30px;
+    }
+    p {
+        color: $myGray;
+    }
+}
+
+.communities {
+    width: 50%;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgb(151, 151, 151);
+    padding: 50px;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+    background: white;
+
+    h2 {
+        padding-bottom: 30px
+    }
+}
+
+.bg-footer {
+    background-color: hsl(192, 100%, 9%);
+}
+
+footer {
+    padding: 200px 100px 50px 100px;
+}
+
+.location {
+    display: flex;
+    p {
+        padding-left: 40px;
+    }
+}   
+
+.phone-number {
+        padding-bottom: 30px;
+        span  {
+            padding-left: 30px;
+        }
+    
+}
+
+.email span {
+    padding-left: 30px;
+}
+
+.second-col ul, .third-col ul {
+    padding-left: 50px;
+    line-height: 2;
+}
+
+.forth-col {
+    .fab {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding:10px;
+        margin-right: 10px;
+        color: white;
+
+    }
+    
+    p  {
+        padding-top: 170px;
+        font-size: 12px
+    } 
+    
+}
+
+.second-col ul a li, .third-col ul a li {
+    color: white;
+}
+
+.second-col ul a li:hover {
+    text-decoration: none;
+}
+
+.third-col ul a li:hover {
+    text-decoration: none;
+}
